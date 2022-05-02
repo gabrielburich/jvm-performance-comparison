@@ -34,3 +34,10 @@ services:
       - SPRING_PROFILES_ACTIVE=prod
       - SERVER_PORT=8083
 
+  test-openj9-ubuntu:
+    image: test-openj9-ubuntu:1.0.0
+    container_name: test-openJ9-ubuntu
+    network_mode: "host"
+    environment:
+      - SPRING_PROFILES_ACTIVE=prod
+      - SERVER_PORT=8084
